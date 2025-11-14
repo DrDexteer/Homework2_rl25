@@ -1,0 +1,20 @@
+ros2_kdl_node:
+  ros__parameters:
+    cmd_interface: "velocity"        #  velocity / postion
+    traj_type: "circular"              #  linear / circular
+    s_type: "cubic"            # trapezoidal / cubic"
+
+    #traj param
+    traj_duration: 1.5
+    acc_duration: 0.5
+    total_time: 1.5
+    trajectory_len: 150
+    traj_radius: 0.15
+    Kp: 5.0
+    end_position: [0.50, 0.40, 0.45]
+
+    
+    ctrl_mode: "vision_ctrl"       #"velocity_ctrl" , "velocity_ctrl_null" , "vision_ctrl"
+    action_mode: false
+    Kv: 7.0
+    lambda: 5.0

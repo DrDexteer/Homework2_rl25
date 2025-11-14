@@ -1,0 +1,16 @@
+# GOAL
+geometry_msgs/Point end_position
+float64 traj_duration
+float64 acc_duration
+int32   trajectory_len
+string  s_type   # "trapezoidal" | "cubic"
+
+---
+# RESULT
+bool    success
+float64 final_error_norm
+
+---
+# FEEDBACK
+float64 elapsed_time
+float64[3] error_xyz
